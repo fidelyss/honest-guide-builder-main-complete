@@ -9,6 +9,7 @@ import WhatIsSection from "./components/WhatIsSection"
 import ProductsSection from "./components/ProductsSection"
 import ProsConsSection from "./components/ProsConsSection"
 import TestimonialsSection from "./components/TestimonialsSection"
+import CTASection from "./components/CTASection"
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/Products" element={<ProductsSection />} />
           <Route path="/ProsCons" element={<ProsConsSection />} />
           <Route path="/Testimonials" element={<TestimonialsSection />} />
+          <Route path="/Buy" element={<CTASection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
